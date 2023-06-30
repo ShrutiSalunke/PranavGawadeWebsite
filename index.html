@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Gawade Social Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19ac9ed232.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/PRANAVGAWADE.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                <!--<li><a href="#">Updates</a></li>-->  
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text"> 
+                <h1>  Pranav Gawade <br>Social Foundation</h1>
+                <p>Giving is the Greatest Act of Grace</p>
+
+            </div>
+        </div>
+    </div>
+<!-----------about-------->
+
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/user.png" >
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Us</h1>
+                            <p>Lorem ipsum dolor sit amet, sea ex quod delenit principes. Eum elit dissentiet et. Ea has labitur ceteros, an option postulant cum. Erat facilis eum an.
+
+                                Dolorum habemus vis cu, id eum mundi legere laoreet. Diam comprehensam an est, augue vitae tollit has no. Cibo persecuti cu sea, vel te option sententiae scriptorem. Nam ex erat aliquando. Ei est noster aliquando, cu nostro eirmod quo.
+                                
+                                Ex etiam dolorem mei, elitr antiopam expetendis quo ea. Ut animal iisque adipisci vis, evertitur vituperatoribus pro in. Cibo adhuc in vel, ei delenit adipisci vim, mea an veritus assentior suscipiantur. Id vel soluta aperiam, has te lobortis assueverit vituperatoribus. Et unum modus ullamcorper qui, cum ut lucilius electram. His eu prima primis.
+                                
+                                Eu purto iusto ius. Utroque fabellas vim no. At brute perfecto concludaturque his, nec veri propriae ex, ad persius definitiones mea. Nec veri gubergren assentior te. Ea doming nostrud eruditi has, suas ignota virtute et ius, ei eius commune periculis vel. Mucius quaerendum theophrastus eu mei.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+<!-----------events-------->
+        <div id="events">
+            <p class="abt">Events</p>
+            <div class="full-img" id="fullImgBox">
+                <img src="GridImages/img1.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery">
+                <img src="GridImages/img1.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img2.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img3.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img4.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img5.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img6.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img7.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img8.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img2.jpg" onclick="openFullImg(this.src)">
+                <img src="GridImages/img1.jpg" onclick="openFullImg(this.src)">
+
+            </div>
+        </div>
+<!---------contact------------->
+
+<div id="contact">
+    
+
+    <div class="container-map">
+        <h1 class="sub-title">Find Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15123.37704406056!2d73.7815338!3d18.6260734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9a751aac6e5%3A0x42966c82c34e4fac!2sPrasanna%20Dange%20Office!5e0!3m2!1sen!2sin!4v1687964602900!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p>contact@email.com</p>
+                <p>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">
+                        Submit
+                    </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright  © PRANAVGAWADE</p>
+    </div>
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsZC3cjWQkaYk0crQi9N5FPCVSfpVBYJxsrU5Z7W-YoayC2zsnqAj7QDkx5Xebtj4naQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
